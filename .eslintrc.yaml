@@ -1,0 +1,26 @@
+env:
+    mocha: true
+    node: true
+parserOptions:
+    ecmaVersion: 2018
+    sourceType: module
+extends:
+    - eslint:recommended
+    - google
+    - airbnb-base
+plugins:
+  - import
+rules:
+    linebreak-style: [0]
+    import/namespace: error
+    import/no-commonjs: error
+    eqeqeq: off
+overrides:
+  - files:
+      - '*.spec.js'
+    rules:
+      prefer-arrow-callback: off
+      func-names: off
+      no-unused-expressions: off
+      no-underscore-dangle: off
+      

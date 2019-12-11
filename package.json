@@ -1,0 +1,31 @@
+{
+  "name": "shuttershare",
+  "version": "1.0.0",
+  "description": "Coding test solution",
+  "main": "index.js",
+  "scripts": {
+    "start:pangram": "nodemon ./src/stockBroker.js --exec babel-node -e js",
+    "start:stockBroker": "nodemon ./src/stockBroker.js --exec babel-node -e js",
+    "test": "mocha --recursive --require babel-register --require babel-polyfill ./test/**/*.js --exit"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Nisha",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.19.1",
+    "mocha": "^6.2.2"
+  }
+}
